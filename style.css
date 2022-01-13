@@ -6,6 +6,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    font-weight: 500;
     background-color: #9F9F9F;
 }
 
@@ -64,7 +65,7 @@ nav img{
 }
 
 /* Top section  */
-.top-section{
+.top-section, .course-section{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,7 +74,7 @@ nav img{
     padding: 33px;
     border-radius: 5px;
 }
-.top-player h1{
+.top-player h1, .top-blog h1, .latest-course h1{
     font-size: 24px;
     font-weight: 500;
     color: #562EFF
@@ -104,4 +105,98 @@ nav img{
 .top-section hr{
     margin: 30px 0;
     border: 1px solid #D1D1D1;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2em;
+    row-gap: 2em;
+}
+.blog{
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+.blog img{
+    width: 177px;
+    height: 117px;
+    margin-right: 16px;
+}
+.blog-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.blog-title h3{
+    margin: 8px 0;
+    font-size: 20px;
+}
+.blog-title span{
+    font-size: 16px;
+    color: gray;
+}
+.blog-title span a{
+    text-decoration: none;
+}
+
+/* latest course */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2em;
+}
+.course{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 30px 15px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 10px 2px lightgray;
+}
+.course img{
+    width: 224px;
+    height: 104px;
+}
+.course h3{
+    font-size: 20px;
+    width: 250px;
+    margin-bottom: 8px;
+}
+.course span{
+    color: #ED6B4F;
+    font-size: 14px;
+    font-weight: 300;
+}
+.information{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+.rating, .duration{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+.rating .stars{
+    display: flex;
+    width: 74px;
+    height: 11px;
+}
+.rating .stars img{
+    width: 14px;
+    height: 14px;
+}
+.duration{
+    background-color: #FFE4E8;
+    color: #FF4A60
+    ;
+    padding: 3px 5px;
+    border-radius: 15px;
+}
+.duration img{
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
 }
