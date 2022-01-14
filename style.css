@@ -230,14 +230,14 @@ footer p{
         display: block;
     }
     nav{
-        /* display: none; */
+        display: none;
         width: 350px;
         height: 500px;
         flex-direction: column;
         justify-content: center;
         position: absolute;
         top: 0;
-        right: -350px;
+        right: 0;
         background-color: #562EFF;
         transition: .5s;
         border-radius: 0 0 0 110px;
