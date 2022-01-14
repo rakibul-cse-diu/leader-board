@@ -16,10 +16,10 @@
             <h3>Idea</h3>
         </div>
 
-        <i id="toggle-open" class="fas fa-bars"></i>
+        <i id="toggle-open" class="fas fa-bars" onclick=toggleActive()></i>
         <!-- Menu toggle -->
-        <nav>
-            <i id="toggle-close" class="fas fa-times-circle"></i>
+        <nav id="navigation">
+            <i id="toggle-close" class="fas fa-times-circle" onclick=toggleDeactive()></i>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -181,6 +181,26 @@
 
     <!-- Font Awesome kitt -->
     <script src="https://kit.fontawesome.com/d65dce6d94.js" crossorigin="anonymous"></script>
+
+    <!-- Script  -->
+    <script>
+        const toggleOpen = document.getElementById("toggle-open");
+        const toggleClose = document.getElementById("toggle-close");
+        const navigation = document.getElementById("navigation");
+        function toggleActive() {
+            console.log("toggle activeted");
+            toggleOpen.style.display = "none";
+            // navigation.style.display = "flex";
+            navigation.style.right = "0";
+        }
+
+        function toggleDeactive() {
+            console.log("toggle deactiveted");
+            toggleOpen.style.display = "block";
+            navigation.style.right = "-350px";
+        }
+
+    </script>
 </body>
 
 </html>
